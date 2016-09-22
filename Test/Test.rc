@@ -1,0 +1,387 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Test.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Test.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Test"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Test 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2012",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_TEST_DIALOG DIALOGEX 0, 0, 711, 445
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "高中地理教学系统"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "截图",IDC_BUTTON1,211,405,52,19
+    PUSHBUTTON      "提取高程",IDC_BUTTON2,375,417,40,16
+    LTEXT           "横向：",IDC_STATIC,387,347,25,8
+    LTEXT           "纵向：",IDC_STATIC,387,363,25,8
+    EDITTEXT        IDC_EDIT1,415,345,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,415,361,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,312,346,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,313,363,40,14,ES_AUTOHSCROLL
+    LTEXT           "中心点设置：",IDC_STATIC,279,332,49,8
+    LTEXT           "经度：",IDC_STATIC,285,348,25,8
+    LTEXT           "纬度：",IDC_STATIC,285,365,25,8
+    EDITTEXT        IDC_EDIT5,313,382,40,14,ES_AUTOHSCROLL
+    LTEXT           "视高：",IDC_STATIC,285,384,25,8
+    EDITTEXT        IDC_EDIT6,313,401,40,14,ES_AUTOHSCROLL
+    LTEXT           "方位角：",IDCANCEL,278,403,33,8
+    PUSHBUTTON      "定位",IDC_BUTTON3,283,419,50,18
+    LTEXT           "采样设置：",IDC_STATIC,397,331,41,8
+    PUSHBUTTON      "打开文件",IDC_BUTTON4,632,387,53,20
+    PUSHBUTTON      "图层控制",IDC_BUTTON5,210,370,53,20
+    PUSHBUTTON      "初始化视图",IDC_BUTTON6,211,334,53,20
+    PUSHBUTTON      "地图漫游",IDC_BUTTON7,631,351,53,20
+    PUSHBUTTON      "距离计算",IDC_BUTTON8,468,341,53,20
+    EDITTEXT        IDC_EDIT9,565,381,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10,508,407,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT11,507,383,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT12,563,408,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT13,527,342,82,14,ES_AUTOHSCROLL
+    LTEXT           "起点",IDC_STATIC,469,383,26,13,WS_BORDER
+    LTEXT           "终点",IDC_STATIC,468,405,26,13,WS_BORDER
+    LTEXT           "纬度",IDC_STATIC,574,363,26,11,WS_BORDER
+    LTEXT           "经度",IDC_STATIC,516,367,26,12,WS_BORDER
+    EDITTEXT        IDC_EDIT8,415,399,40,14,ES_AUTOHSCROLL
+    LTEXT           "第几次采集：",IDC_STATIC,365,401,49,8
+    EDITTEXT        IDC_EDIT7,415,381,40,14,ES_AUTOHSCROLL
+    LTEXT           "采集次数：",IDC_STATIC,371,381,41,8
+    LTEXT           "",IDCANCEL2,199,7,512,318
+    CONTROL         "",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_HSCROLL | WS_TABSTOP,33,7,136,422
+END
+
+IDD_LAYERSCONTROL DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,205,162,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,259,162,50,14
+    CONTROL         "三维地形",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,42,20,48,10
+    CONTROL         "网络地标",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,42,37,48,10
+    CONTROL         "行政边界",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,42,55,48,10
+    CONTROL         "道路",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,42,75,32,10
+    CONTROL         "全球热点",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,42,92,48,10
+    CONTROL         "气象",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,131,20,32,10
+    CONTROL         "3D建筑",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,131,38,41,10
+    CONTROL         "图片库",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,131,57,40,10
+    CONTROL         "街道",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,131,75,32,10
+    CONTROL         "海洋",IDC_CHECK10,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,131,93,32,10
+END
+
+IDD_MANYOU DIALOGEX 0, 0, 381, 258
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "manyou"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,205,237,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,324,237,50,14
+    COMBOBOX        IDC_COMBO2,64,45,53,54,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,64,101,53,54,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO4,163,102,53,54,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO5,63,157,53,54,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "华北地区",IDC_STATIC,75,31,33,8
+    LTEXT           "东北地区",IDC_STATIC,258,31,33,8
+    LTEXT           "华东地区",IDC_STATIC,73,84,33,8
+    LTEXT           "港澳台",IDC_STATIC,171,85,25,8
+    LTEXT           "西南地区",IDC_STATIC,71,138,33,8
+    COMBOBOX        IDC_COMBO7,251,45,53,54,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO8,253,103,53,54,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO9,251,158,53,54,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "中南地区",IDC_STATIC,261,86,33,8
+    LTEXT           "西北地区",IDC_STATIC,259,138,33,8
+END
+
+IDD_CACULATE DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,205,162,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,259,162,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "FileDescription", "Test Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "Test"
+            VALUE "LegalCopyright", "版权所有 (C) 2012"
+            VALUE "OriginalFilename", "Test.EXE"
+            VALUE "ProductName", "Test 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_TEST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 437
+    END
+
+    IDD_LAYERSCONTROL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_MANYOU, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 374
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 251
+    END
+
+    IDD_CACULATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MANYOU DLGINIT
+BEGIN
+    IDC_COMBO2, 0x403, 5, 0
+0xb1b1, 0xa9be, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0xeccc, 0xf2bd, "\000" 
+    IDC_COMBO2, 0x403, 7, 0
+0xafca, 0xd2bc, 0xafd7, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0xabcc, 0xadd4, "\000" 
+    IDC_COMBO2, 0x403, 9, 0
+0xf4ba, 0xcdba, 0xc6ba, 0xd8cc, "\000" 
+    IDC_COMBO3, 0x403, 5, 0
+0xcfc9, 0xa3ba, "\000" 
+    IDC_COMBO3, 0x403, 5, 0
+0xcfc4, 0xa9be, "\000" 
+    IDC_COMBO3, 0x403, 5, 0
+0xbcba, 0xddd6, "\000" 
+    IDC_COMBO3, 0x403, 5, 0
+0xcfba, 0xcab7, "\000" 
+    IDC_COMBO3, 0x403, 5, 0
+0xa3b8, 0xddd6, "\000" 
+    IDC_COMBO3, 0x403, 5, 0
+0xcfc4, 0xfdb2, "\000" 
+    IDC_COMBO3, 0x403, 5, 0
+0xc3bc, 0xcfc4, "\000" 
+    IDC_COMBO4, 0x403, 5, 0
+0xe3cf, 0xdbb8, "\000" 
+    IDC_COMBO4, 0x403, 5, 0
+0xc4b0, 0xc5c3, "\000" 
+    IDC_COMBO4, 0x403, 5, 0
+0xa8cc, 0xb1b1, "\000" 
+    IDC_COMBO5, 0x403, 5, 0
+0xd8d6, 0xecc7, "\000" 
+    IDC_COMBO5, 0x403, 5, 0
+0xc9b3, 0xbcb6, "\000" 
+    IDC_COMBO5, 0x403, 5, 0
+0xf3b9, 0xf4d1, "\000" 
+    IDC_COMBO5, 0x403, 5, 0
+0xa5c0, 0xf7c3, "\000" 
+    IDC_COMBO5, 0x403, 5, 0
+0xadc0, 0xf8c8, "\000" 
+    IDC_COMBO7, 0x403, 7, 0
+0xfeb9, 0xfbb6, 0xf5b1, "\000" 
+    IDC_COMBO7, 0x403, 5, 0
+0xa4b3, 0xbab4, "\000" 
+    IDC_COMBO7, 0x403, 5, 0
+0xf2c9, 0xf4d1, "\000" 
+    IDC_COMBO8, 0x403, 5, 0
+0xa3d6, 0xddd6, "\000" 
+    IDC_COMBO8, 0x403, 5, 0
+0xe4ce, 0xbaba, "\000" 
+    IDC_COMBO8, 0x403, 5, 0
+0xa4b3, 0xb3c9, "\000" 
+    IDC_COMBO8, 0x403, 5, 0
+0xe3b9, 0xddd6, "\000" 
+    IDC_COMBO8, 0x403, 5, 0
+0xa3ba, 0xdabf, "\000" 
+    IDC_COMBO8, 0x403, 5, 0
+0xcfc4, 0xfec4, "\000" 
+    IDC_COMBO9, 0x403, 5, 0
+0xf7ce, 0xb2b0, "\000" 
+    IDC_COMBO9, 0x403, 5, 0
+0xbcc0, 0xddd6, "\000" 
+    IDC_COMBO9, 0x403, 5, 0
+0xf7ce, 0xfec4, "\000" 
+    IDC_COMBO9, 0x403, 9, 0
+0xdace, 0xb3c2, 0xbec4, 0xebc6, "\000" 
+    IDC_COMBO9, 0x403, 5, 0
+0xf8d2, 0xa8b4, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Test(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Test.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

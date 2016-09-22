@@ -1,0 +1,2 @@
+当前地形的视高为：5446.78米
+num,longitude,latitude,altitude

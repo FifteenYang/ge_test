@@ -1,0 +1,5 @@
+mfc 显示目录结构：http://blog.sina.com.cn/s/blog_6e04a8350101ejsu.html
+shellexecute 嵌入窗口到主程序 http://bbs.csdn.net/topics/390470671
+CreateProcess的用法 http://blog.csdn.net/hityct1/article/details/3968296
+
+http://blog.csdn.net/fengbingchun/article/details/6034873
